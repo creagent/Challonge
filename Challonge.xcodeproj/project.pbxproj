@@ -14,6 +14,23 @@
 		8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */; };
 		8389EFCD27DF0F7600BF24D8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFCC27DF0F7600BF24D8 /* TestView.swift */; };
 		8389EFD127DF101100BF24D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8389EFD027DF101100BF24D8 /* SnapKit */; };
+		8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */; };
+		8397FA7027E5096500234E02 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA6F27E5096500234E02 /* HTTP.swift */; };
+		8397FA7227E509A000234E02 /* DataInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7127E509A000234E02 /* DataInstantiable.swift */; };
+		8397FA7527E50A4100234E02 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 8397FA7427E50A4100234E02 /* Reachability */; };
+		8397FA7727E50BF200234E02 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7627E50BF200234E02 /* Log.swift */; };
+		8397FA7927E50C4A00234E02 /* ReachibilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7827E50C4A00234E02 /* ReachibilityManager.swift */; };
+		8397FA7B27E50C6400234E02 /* URLCovertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7A27E50C6400234E02 /* URLCovertible.swift */; };
+		8397FA7D27E50C7300234E02 /* DataConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7C27E50C7300234E02 /* DataConvertible.swift */; };
+		8397FA7F27E50D4700234E02 /* Data+DataInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */; };
+		8397FA8127E50D5100234E02 /* Dictionary+DataInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */; };
+		8397FA8327E50D5900234E02 /* Dictionary+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */; };
+		8397FA8527E50D6300234E02 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8427E50D6300234E02 /* EndPoint.swift */; };
+		8397FA8727E50D6D00234E02 /* EndPointBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8627E50D6D00234E02 /* EndPointBody.swift */; };
+		8397FA8927E50D7E00234E02 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8827E50D7E00234E02 /* Serializer.swift */; };
+		8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8A27E50EB700234E02 /* NetworkService.swift */; };
+		8397FA8D27E50F7A00234E02 /* TournamentsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */; };
+		8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8E27E50FA400234E02 /* TournamentsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +42,22 @@
 		8341971827DE8B8600EA284A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
 		8389EFCC27DF0F7600BF24D8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		8397FA6F27E5096500234E02 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		8397FA7127E509A000234E02 /* DataInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInstantiable.swift; sourceTree = "<group>"; };
+		8397FA7627E50BF200234E02 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		8397FA7827E50C4A00234E02 /* ReachibilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachibilityManager.swift; sourceTree = "<group>"; };
+		8397FA7A27E50C6400234E02 /* URLCovertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCovertible.swift; sourceTree = "<group>"; };
+		8397FA7C27E50C7300234E02 /* DataConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataConvertible.swift; sourceTree = "<group>"; };
+		8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+DataInstantiable.swift"; sourceTree = "<group>"; };
+		8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+DataInstantiable.swift"; sourceTree = "<group>"; };
+		8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Merge.swift"; sourceTree = "<group>"; };
+		8397FA8427E50D6300234E02 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8397FA8627E50D6D00234E02 /* EndPointBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointBody.swift; sourceTree = "<group>"; };
+		8397FA8827E50D7E00234E02 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
+		8397FA8A27E50EB700234E02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsEndPoint.swift; sourceTree = "<group>"; };
+		8397FA8E27E50FA400234E02 /* TournamentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8389EFD127DF101100BF24D8 /* SnapKit in Frameworks */,
+				8397FA7527E50A4100234E02 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +96,22 @@
 				8341971F27DE8BB700EA284A /* Utilities */,
 				8341972027DE8BC300EA284A /* Resources */,
 				8341972127DE8BF600EA284A /* Support */,
-				8341971527DE8B8600EA284A /* LaunchScreen.storyboard */,
+				8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */,
+				8397FA6F27E5096500234E02 /* HTTP.swift */,
+				8397FA7127E509A000234E02 /* DataInstantiable.swift */,
+				8397FA7627E50BF200234E02 /* Log.swift */,
+				8397FA7827E50C4A00234E02 /* ReachibilityManager.swift */,
+				8397FA7A27E50C6400234E02 /* URLCovertible.swift */,
+				8397FA7C27E50C7300234E02 /* DataConvertible.swift */,
+				8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */,
+				8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */,
+				8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */,
+				8397FA8427E50D6300234E02 /* EndPoint.swift */,
+				8397FA8627E50D6D00234E02 /* EndPointBody.swift */,
+				8397FA8827E50D7E00234E02 /* Serializer.swift */,
+				8397FA8A27E50EB700234E02 /* NetworkService.swift */,
+				8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */,
+				8397FA8E27E50FA400234E02 /* TournamentsService.swift */,
 			);
 			path = Challonge;
 			sourceTree = "<group>";
@@ -95,6 +144,7 @@
 		8341972127DE8BF600EA284A /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				8341971527DE8B8600EA284A /* LaunchScreen.storyboard */,
 				8341970A27DE8B8100EA284A /* AppDelegate.swift */,
 				8341971827DE8B8600EA284A /* Info.plist */,
 			);
@@ -119,6 +169,7 @@
 			name = Challonge;
 			packageProductDependencies = (
 				8389EFD027DF101100BF24D8 /* SnapKit */,
+				8397FA7427E50A4100234E02 /* Reachability */,
 			);
 			productName = Challonge;
 			productReference = 8341970727DE8B8100EA284A /* Challonge.app */;
@@ -150,6 +201,7 @@
 			mainGroup = 834196FE27DE8B8100EA284A;
 			packageReferences = (
 				8389EFCF27DF101100BF24D8 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8397FA7327E50A4100234E02 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = 8341970827DE8B8100EA284A /* Products */;
 			projectDirPath = "";
@@ -177,9 +229,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */,
+				8397FA7227E509A000234E02 /* DataInstantiable.swift in Sources */,
+				8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */,
 				8389EFCD27DF0F7600BF24D8 /* TestView.swift in Sources */,
+				8397FA7F27E50D4700234E02 /* Data+DataInstantiable.swift in Sources */,
+				8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */,
+				8397FA7D27E50C7300234E02 /* DataConvertible.swift in Sources */,
 				8341970F27DE8B8100EA284A /* ViewController.swift in Sources */,
+				8397FA8D27E50F7A00234E02 /* TournamentsEndPoint.swift in Sources */,
+				8397FA8327E50D5900234E02 /* Dictionary+Merge.swift in Sources */,
+				8397FA7027E5096500234E02 /* HTTP.swift in Sources */,
 				8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */,
+				8397FA8127E50D5100234E02 /* Dictionary+DataInstantiable.swift in Sources */,
+				8397FA7727E50BF200234E02 /* Log.swift in Sources */,
+				8397FA7927E50C4A00234E02 /* ReachibilityManager.swift in Sources */,
+				8397FA8727E50D6D00234E02 /* EndPointBody.swift in Sources */,
+				8397FA8527E50D6300234E02 /* EndPoint.swift in Sources */,
+				8397FA7B27E50C6400234E02 /* URLCovertible.swift in Sources */,
+				8397FA8927E50D7E00234E02 /* Serializer.swift in Sources */,
 				8341970B27DE8B8100EA284A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +468,14 @@
 				kind = branch;
 			};
 		};
+		8397FA7327E50A4100234E02 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -407,6 +483,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8389EFCF27DF101100BF24D8 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		8397FA7427E50A4100234E02 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8397FA7327E50A4100234E02 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
