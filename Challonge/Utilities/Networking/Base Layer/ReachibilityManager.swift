@@ -8,8 +8,8 @@
 import Foundation
 import Reachability
 
-public class ReachabilityManager {
-    public static var isNetworkConnected: Bool {
+class ReachabilityManager {
+    static var isNetworkConnected: Bool {
         guard let r = try? Reachability() else { return false }
         return r.connection != .unavailable
     }

@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class EndPointBody: DataConvertible {
+class EndPointBody: DataConvertible {
     // MARK: - Init
-    public init(requestBody: [String: Any]) {
+    init(requestBody: [String: Any]) {
         self.requestBody = requestBody
     }
     
-    public init(requestData: Data) {
+    init(requestData: Data) {
         self.requestData = requestData
     }
     
@@ -24,7 +24,7 @@ public class EndPointBody: DataConvertible {
 }
 
 // MARK: - DataConvertible
-public extension EndPointBody {
+extension EndPointBody {
     func getData() throws -> Data {
         if let data = requestData {
             return data

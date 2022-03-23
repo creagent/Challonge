@@ -7,12 +7,12 @@
 
 import Foundation
 
-public enum TournamentsEndPoint {
+enum TournamentsEndPoint {
     case create
 }
 
 extension TournamentsEndPoint: EndPoint {
-    public var requestEndPoint: String {
+    var requestEndPoint: String {
         let entityName = "tournaments"
         var method = ""
         switch self {
@@ -22,7 +22,7 @@ extension TournamentsEndPoint: EndPoint {
         return "/\(entityName)/\(method)"
     }
     
-//    public var body: EndPointBody? {
+//    var body: EndPointBody? {
 //        var data: Data
 //        switch self {
 //
@@ -30,7 +30,7 @@ extension TournamentsEndPoint: EndPoint {
 //        return EndPointBody(requestData: data)
 //    }
     
-//    public var queryItems: [String: Any]? {
+//    var queryItems: [String: Any]? {
 //        var queryItems: [String: Any?] = [:]
 //        switch self {
 //
@@ -38,7 +38,7 @@ extension TournamentsEndPoint: EndPoint {
 //        return queryItems.compactMapValues({ $0 })
 //    }
     
-    public var httpMethod: HTTPMethod {
+    var httpMethod: HTTPMethod {
         switch self {
         case .create:
             return .post

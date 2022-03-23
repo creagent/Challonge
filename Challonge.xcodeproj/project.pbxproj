@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8326C80627EA1955009DB2EF /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326C80527EA1955009DB2EF /* Tournament.swift */; };
+		8326C80F27EA2281009DB2EF /* StartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326C80E27EA2281009DB2EF /* StartViewModel.swift */; };
+		8326C81227EA2D63009DB2EF /* FirstStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326C81127EA2D63009DB2EF /* FirstStepViewController.swift */; };
+		8326C81427EA2D83009DB2EF /* FirstStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8326C81327EA2D83009DB2EF /* FirstStepView.swift */; };
 		8341970B27DE8B8100EA284A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341970A27DE8B8100EA284A /* AppDelegate.swift */; };
-		8341970F27DE8B8100EA284A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341970E27DE8B8100EA284A /* ViewController.swift */; };
+		8341970F27DE8B8100EA284A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341970E27DE8B8100EA284A /* StartViewController.swift */; };
 		8341971427DE8B8600EA284A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8341971327DE8B8600EA284A /* Assets.xcassets */; };
 		8341971727DE8B8600EA284A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8341971527DE8B8600EA284A /* LaunchScreen.storyboard */; };
 		8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */; };
-		8389EFCD27DF0F7600BF24D8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFCC27DF0F7600BF24D8 /* TestView.swift */; };
+		8389EFCD27DF0F7600BF24D8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFCC27DF0F7600BF24D8 /* StartView.swift */; };
 		8389EFD127DF101100BF24D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8389EFD027DF101100BF24D8 /* SnapKit */; };
 		8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */; };
 		8397FA7027E5096500234E02 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA6F27E5096500234E02 /* HTTP.swift */; };
@@ -34,14 +38,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8326C80527EA1955009DB2EF /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
+		8326C80E27EA2281009DB2EF /* StartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewModel.swift; sourceTree = "<group>"; };
+		8326C81127EA2D63009DB2EF /* FirstStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepViewController.swift; sourceTree = "<group>"; };
+		8326C81327EA2D83009DB2EF /* FirstStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstStepView.swift; sourceTree = "<group>"; };
 		8341970727DE8B8100EA284A /* Challonge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challonge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8341970A27DE8B8100EA284A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8341970E27DE8B8100EA284A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8341970E27DE8B8100EA284A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		8341971327DE8B8600EA284A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8341971627DE8B8600EA284A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8341971827DE8B8600EA284A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
-		8389EFCC27DF0F7600BF24D8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		8389EFCC27DF0F7600BF24D8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
 		8397FA6F27E5096500234E02 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		8397FA7127E509A000234E02 /* DataInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInstantiable.swift; sourceTree = "<group>"; };
@@ -73,6 +81,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8326C80727EA1F82009DB2EF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8326C80B27EA204A009DB2EF /* API */,
+				8326C80A27EA2014009DB2EF /* Base Layer */,
+				8326C80927EA1FC9009DB2EF /* Extensions */,
+				8326C80827EA1FAB009DB2EF /* Protocols */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8326C80827EA1FAB009DB2EF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8397FA7127E509A000234E02 /* DataInstantiable.swift */,
+				8397FA7A27E50C6400234E02 /* URLCovertible.swift */,
+				8397FA7C27E50C7300234E02 /* DataConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8326C80927EA1FC9009DB2EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */,
+				8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */,
+				8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8326C80A27EA2014009DB2EF /* Base Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8397FA8627E50D6D00234E02 /* EndPointBody.swift */,
+				8397FA8427E50D6300234E02 /* EndPoint.swift */,
+				8397FA8A27E50EB700234E02 /* NetworkService.swift */,
+				8397FA8827E50D7E00234E02 /* Serializer.swift */,
+				8397FA7827E50C4A00234E02 /* ReachibilityManager.swift */,
+				8397FA7627E50BF200234E02 /* Log.swift */,
+				8397FA6F27E5096500234E02 /* HTTP.swift */,
+				8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */,
+			);
+			path = "Base Layer";
+			sourceTree = "<group>";
+		};
+		8326C80B27EA204A009DB2EF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8397FA8E27E50FA400234E02 /* TournamentsService.swift */,
+				8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8326C80C27EA2078009DB2EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8326C80527EA1955009DB2EF /* Tournament.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8326C80D27EA21EE009DB2EF /* Start Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8389EFCC27DF0F7600BF24D8 /* StartView.swift */,
+				8341970E27DE8B8100EA284A /* StartViewController.swift */,
+				8326C80E27EA2281009DB2EF /* StartViewModel.swift */,
+			);
+			path = "Start Screen";
+			sourceTree = "<group>";
+		};
+		8326C81027EA2CE4009DB2EF /* First Step */ = {
+			isa = PBXGroup;
+			children = (
+				8326C81327EA2D83009DB2EF /* FirstStepView.swift */,
+				8326C81127EA2D63009DB2EF /* FirstStepViewController.swift */,
+			);
+			path = "First Step";
+			sourceTree = "<group>";
+		};
 		834196FE27DE8B8100EA284A = {
 			isa = PBXGroup;
 			children = (
@@ -93,25 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				8341971E27DE8BAA00EA284A /* UI */,
+				8326C80C27EA2078009DB2EF /* Model */,
 				8341971F27DE8BB700EA284A /* Utilities */,
 				8341972027DE8BC300EA284A /* Resources */,
 				8341972127DE8BF600EA284A /* Support */,
-				8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */,
-				8397FA6F27E5096500234E02 /* HTTP.swift */,
-				8397FA7127E509A000234E02 /* DataInstantiable.swift */,
-				8397FA7627E50BF200234E02 /* Log.swift */,
-				8397FA7827E50C4A00234E02 /* ReachibilityManager.swift */,
-				8397FA7A27E50C6400234E02 /* URLCovertible.swift */,
-				8397FA7C27E50C7300234E02 /* DataConvertible.swift */,
-				8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */,
-				8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */,
-				8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */,
-				8397FA8427E50D6300234E02 /* EndPoint.swift */,
-				8397FA8627E50D6D00234E02 /* EndPointBody.swift */,
-				8397FA8827E50D7E00234E02 /* Serializer.swift */,
-				8397FA8A27E50EB700234E02 /* NetworkService.swift */,
-				8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */,
-				8397FA8E27E50FA400234E02 /* TournamentsService.swift */,
 			);
 			path = Challonge;
 			sourceTree = "<group>";
@@ -119,8 +194,8 @@
 		8341971E27DE8BAA00EA284A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				8341970E27DE8B8100EA284A /* ViewController.swift */,
-				8389EFCC27DF0F7600BF24D8 /* TestView.swift */,
+				8326C80D27EA21EE009DB2EF /* Start Screen */,
+				8326C81027EA2CE4009DB2EF /* First Step */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -129,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */,
+				8326C80727EA1F82009DB2EF /* Networking */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -229,17 +305,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8326C80627EA1955009DB2EF /* Tournament.swift in Sources */,
 				8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */,
 				8397FA7227E509A000234E02 /* DataInstantiable.swift in Sources */,
 				8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */,
-				8389EFCD27DF0F7600BF24D8 /* TestView.swift in Sources */,
+				8326C81227EA2D63009DB2EF /* FirstStepViewController.swift in Sources */,
+				8389EFCD27DF0F7600BF24D8 /* StartView.swift in Sources */,
 				8397FA7F27E50D4700234E02 /* Data+DataInstantiable.swift in Sources */,
 				8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */,
 				8397FA7D27E50C7300234E02 /* DataConvertible.swift in Sources */,
-				8341970F27DE8B8100EA284A /* ViewController.swift in Sources */,
+				8341970F27DE8B8100EA284A /* StartViewController.swift in Sources */,
 				8397FA8D27E50F7A00234E02 /* TournamentsEndPoint.swift in Sources */,
 				8397FA8327E50D5900234E02 /* Dictionary+Merge.swift in Sources */,
 				8397FA7027E5096500234E02 /* HTTP.swift in Sources */,
+				8326C81427EA2D83009DB2EF /* FirstStepView.swift in Sources */,
 				8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */,
 				8397FA8127E50D5100234E02 /* Dictionary+DataInstantiable.swift in Sources */,
 				8397FA7727E50BF200234E02 /* Log.swift in Sources */,
@@ -249,6 +328,7 @@
 				8397FA7B27E50C6400234E02 /* URLCovertible.swift in Sources */,
 				8397FA8927E50D7E00234E02 /* Serializer.swift in Sources */,
 				8341970B27DE8B8100EA284A /* AppDelegate.swift in Sources */,
+				8326C80F27EA2281009DB2EF /* StartViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

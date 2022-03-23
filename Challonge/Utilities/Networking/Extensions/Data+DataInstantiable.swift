@@ -8,7 +8,7 @@
 import Foundation
 
 extension Data: DataInstantiable {
-    public init(with data: Data) throws {
+    init(with data: Data) throws {
         self = data
     }
 }

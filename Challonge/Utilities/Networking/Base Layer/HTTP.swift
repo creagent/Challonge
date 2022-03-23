@@ -8,20 +8,20 @@
 import Foundation
 
 // MARK: - Types
-public typealias HTTPRequestResult<ResultType: DataInstantiable> = (Result<ResultType?, HTTPRequestError>, String)
-public typealias HTTPResponseHandler<ResultType: DataInstantiable> = (HTTPRequestResult<ResultType>) -> Void
-public typealias ResultHandler<ResultType> = (Result<ResultType, Error>) -> Void
+typealias HTTPRequestResult<ResultType: DataInstantiable> = (Result<ResultType?, HTTPRequestError>, String)
+typealias HTTPResponseHandler<ResultType: DataInstantiable> = (HTTPRequestResult<ResultType>) -> Void
+typealias ResultHandler<ResultType> = (Result<ResultType, Error>) -> Void
 
-public enum HTTPHeaders: String {
+enum HTTPHeaders: String {
     case contentType = "Content-Type"
 }
 
-public enum HTTPHeaderContentType: String {
+enum HTTPHeaderContentType: String {
     case json = "application/json"
     case urlEncodedUTF8 = "application/x-www-form-urlencoded; charset=utf-8"
 }
 
-public enum HTTPMethod: String {
+enum HTTPMethod: String {
     case delete = "DELETE"
     case get = "GET"
     case patch = "PATCH"
@@ -29,7 +29,7 @@ public enum HTTPMethod: String {
     case put = "PUT"
 }
 
-public enum HTTPRequestError: Error {
+enum HTTPRequestError: Error {
     case clientError(code: Int)
     case forbiddenError
     case internalServerError
@@ -45,7 +45,7 @@ public enum HTTPRequestError: Error {
     case urlGenerationError(error: Error)
 }
 
-//public extension Error {
+//extension Error {
 //    var errorViewType: ErrorViewType? {
 //        guard let error = self as? HTTPRequestError else { return nil }
 //        switch error {
@@ -63,7 +63,7 @@ public enum HTTPRequestError: Error {
 //    }
 //}
 
-public func httpRequestErrorByCode(_ code: Int) -> HTTPRequestError {
+func httpRequestErrorByCode(_ code: Int) -> HTTPRequestError {
     switch code {
     case 401: return .unauthorizedError
     case 403: return .forbiddenError
@@ -75,6 +75,6 @@ public func httpRequestErrorByCode(_ code: Int) -> HTTPRequestError {
     }
 }
 
-public enum RequestTimeout: TimeInterval {
+enum RequestTimeout: TimeInterval {
     case standard = 60.0
 }

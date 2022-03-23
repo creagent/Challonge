@@ -9,7 +9,7 @@ import Foundation
 import os.log
 
 
-public extension OSLog {
+extension OSLog {
     private static var subsystem = Bundle.main.bundleIdentifier!
     
     // MARK: - Log categories
@@ -84,7 +84,7 @@ public extension OSLog {
     }
 }
 
-public enum LogType: String {
+enum LogType: String {
     case error
     case log
     case warning

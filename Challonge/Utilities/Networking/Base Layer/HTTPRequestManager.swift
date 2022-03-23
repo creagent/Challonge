@@ -8,7 +8,7 @@
 import Foundation
 import os.log
 
-public class HTTPRequestManager {
+class HTTPRequestManager {
     @discardableResult
     func executeRequest<ResultType: DataInstantiable>(_ httpMethod: HTTPMethod = .get,
                                                       to urlConvertible: URLConvertible,

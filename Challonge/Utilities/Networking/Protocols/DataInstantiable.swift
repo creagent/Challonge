@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol DataInstantiable {
+protocol DataInstantiable {
     init(with data: Data) throws
 }
