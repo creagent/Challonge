@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol StartViewDelegate {
+    func createButtonDidPress()
+}
+
 class StartView: ProgrammaticView {
     private let container = UIView()
     
@@ -20,7 +24,30 @@ class StartView: ProgrammaticView {
         super.setup()
         addSubviews()
         addConstraints()
+        
+        createButton.buttonDidPress = { [weak self] in
+            self?.delegate?.createButtonDidPress()
+        }
+        
+        loginTextField.text = "creagent"
+        apiKeyTextField.text = "K73OxY8R5ty5mCtdrICvgYJSBtxIlzx8knxRuVIG"
     }
+    
+    var isCreateButtonActive = true {
+        willSet {
+            createButton.isUserInteractionEnabled = newValue
+        }
+    }
+    
+    var apiKey: String {
+        apiKeyTextField.text ?? ""
+    }
+    
+    var login: String {
+        loginTextField.text ?? ""
+    }
+    
+    var delegate: StartViewDelegate?
 }
 
 private extension StartView {

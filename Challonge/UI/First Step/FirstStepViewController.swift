@@ -12,7 +12,14 @@ class FirstStepViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         firstStepView = FirstStepView(ownerController: self)
+        firstStepView.delegate = self
     }
     
-    private var firstStepView: FirstStepView?
+    private var firstStepView: FirstStepView!
+}
+
+extension FirstStepViewController: FirstStepViewDelegate {
+    func closeButtonDidPress() {
+        dismiss(animated: true)
+    }
 }

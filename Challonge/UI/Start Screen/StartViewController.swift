@@ -12,10 +12,12 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         startView = StartView(ownerController: self)
-        openForm()
+        startView.delegate = self
     }
     
-    private var startView: StartView?
+    private var startView: StartView!
+    
+    private let viewModel = StartViewModel()
 }
 
 private extension StartViewController {
@@ -28,8 +30,20 @@ private extension StartViewController {
     }
 }
 
+extension StartViewController: StartViewDelegate {
+    func createButtonDidPress() {
+        startView.isCreateButtonActive = false
+        viewModel.checkAccess(login: startView.login,
+                              apiKey: startView.apiKey) { [weak self] isSuccessful in
+            if isSuccessful {
+                self?.openForm()
+            }
+            self?.startView.isCreateButtonActive = true
+        }
+    }
+}
+
 class CustomNavigationController: UINavigationController {
-    
     init() {
         super.init(nibName: nil, bundle: nil)
         setNavigationBarHidden(true, animated: false)

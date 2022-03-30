@@ -24,6 +24,9 @@ class BaseEndPoint: EndPoint {
     var requestEndPoint: String = ""
     
     var httpMethod: HTTPMethod = .get
+    
+    static var baseAuthUsername: String?
+    static var baseAuthPassword: String?
 }
 
  protocol EndPoint: URLConvertible {
@@ -47,9 +50,17 @@ class BaseEndPoint: EndPoint {
         false
     }
     
-    var headers: [String: String]? {
-        return ["\(HTTPHeaders.contentType.rawValue)": "application/json"]
-    }
+     var headers: [String: String]? {
+         var headers = ["\(HTTPHeaders.contentType.rawValue)": "application/json"]
+//         if let username = BaseEndPoint.baseAuthUsername,
+//            let password = BaseEndPoint.baseAuthPassword {
+//             let loginString = String(format: "%@:%@", username, password)
+//             let loginData = loginString.data(using: String.Encoding.utf8)!
+//             let base64LoginString = loginData.base64EncodedString()
+//             headers["Authorization"] = "Basic \(base64LoginString)"
+//         }
+         return headers
+     }
     
     var queryItems: [String: Any]? {
         nil

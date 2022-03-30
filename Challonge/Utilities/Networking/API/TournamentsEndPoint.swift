@@ -8,27 +8,31 @@
 import Foundation
 
 enum TournamentsEndPoint {
-    case create
+    case create(register: TournamentRegister)
+    case get
 }
 
 extension TournamentsEndPoint: EndPoint {
     var requestEndPoint: String {
         let entityName = "tournaments"
-        var method = ""
-        switch self {
-        case .create:
-            method = ""
+        var method: String?
+        var result = "/\(entityName)"
+        if let method = method {
+            result += "/\(method)"
         }
-        return "/\(entityName)/\(method)"
+        return "\(result).json"
     }
     
-//    var body: EndPointBody? {
-//        var data: Data
-//        switch self {
-//
-//        }
-//        return EndPointBody(requestData: data)
-//    }
+    var body: EndPointBody? {
+        var data: Data
+        switch self {
+        case .create(let register):
+            data = try! JSONEncoder().encode(register)
+        default:
+            return nil
+        }
+        return EndPointBody(requestData: data)
+    }
     
 //    var queryItems: [String: Any]? {
 //        var queryItems: [String: Any?] = [:]
@@ -40,6 +44,8 @@ extension TournamentsEndPoint: EndPoint {
     
     var httpMethod: HTTPMethod {
         switch self {
+        case .get:
+            return.get
         case .create:
             return .post
         }

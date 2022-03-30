@@ -7,48 +7,42 @@
 
 import UIKit
 
+protocol FirstStepViewDelegate {
+    func closeButtonDidPress()
+}
+
 class FirstStepView: ProgrammaticView {
     private let container = UIView()
     
-    private let loginTextField = CustomTextField(placeholder: "Логин")
-    
-    private let apiKeyTextField = CustomTextField(placeholder: "API Ключ")
-    
-    private let createButton = CustomButton(withTitle: "Создать турнир")
+    private var closeButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Закрыть", for: .normal)
+        return button
+    }()
     
     override func setup() {
         super.setup()
         addSubviews()
         addConstraints()
+        
+        closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
     }
+    
+    var delegate: FirstStepViewDelegate?
 }
 
 private extension FirstStepView {
     func addSubviews() {
-        addSubview(container)
-        container.addSubview(loginTextField)
-        container.addSubview(apiKeyTextField)
-        container.addSubview(createButton)
+        addSubview(closeButton)
     }
     
     func addConstraints() {
-        container.snp.makeConstraints { maker in
-            maker.center.equalToSuperview()
-            maker.leading.trailing.equalToSuperview().inset(40)
+        closeButton.snp.makeConstraints { maker in
+            maker.top.trailing.equalTo(safeAreaLayoutGuide).inset(16)
         }
-        
-        loginTextField.snp.makeConstraints { maker in
-            maker.top.leading.trailing.equalToSuperview()
-        }
-        
-        apiKeyTextField.snp.makeConstraints { maker in
-            maker.leading.trailing.equalToSuperview()
-            maker.top.equalTo(loginTextField.snp.bottom).offset(16)
-        }
-        
-        createButton.snp.makeConstraints { maker in
-            maker.centerX.bottom.equalToSuperview()
-            maker.top.equalTo(apiKeyTextField.snp.bottom).offset(32)
-        }
+    }
+    
+    @objc func close() {
+        delegate?.closeButtonDidPress()
     }
 }
