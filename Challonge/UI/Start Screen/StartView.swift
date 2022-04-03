@@ -76,6 +76,7 @@ private extension StartView {
         createButton.snp.makeConstraints { maker in
             maker.centerX.bottom.equalToSuperview()
             maker.top.equalTo(apiKeyTextField.snp.bottom).offset(32)
+            maker.width.greaterThanOrEqualTo(300)
         }
     }
 }

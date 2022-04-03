@@ -8,21 +8,21 @@
 import Foundation
 
 struct Tournament: Codable {
-    var name: String
-    var type: String
-    var description: String
+    var name: String?
+    var type: String?
+    var description: String?
     var gameId: Int = 600
-    var isPrivate: Bool
-    var notifyUsersWhenMatchesOpens: Bool
-    var notifyUsersWhenMatchesEnds: Bool
-    var holdThirdPlaceMatch: Bool
-    var rankedBy: String
+    var isPrivate: Bool?
+    var notifyUsersWhenMatchesOpens: Bool?
+    var notifyUsersWhenMatchesEnds: Bool?
+    var holdThirdPlaceMatch: Bool?
+    var rankedBy: String?
     var signupCapacity: Int?
-    private var startDateString: String
+    var startDateString: String?
     var startDate: Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-ddTHH:mm:ss"
-        return dateFormatter.date(from: startDateString) ?? Date()
+        return dateFormatter.date(from: startDateString ?? "") ?? Date()
     }
     
     enum CodingKeys: String, CodingKey {
@@ -40,11 +40,6 @@ struct Tournament: Codable {
     }
 }
 
-struct TournamentRegister: Codable {
-    var apiKey: String
-    var tournament: Tournament
-}
-
-struct TournamentResponse: Decodable {
+struct TournamentResponse: Codable {
     var tournament: Tournament
 }

@@ -51,7 +51,8 @@ class BaseEndPoint: EndPoint {
     }
     
      var headers: [String: String]? {
-         var headers = ["\(HTTPHeaders.contentType.rawValue)": "application/json"]
+//         var headers = ["\(HTTPHeaders.contentType.rawValue)": "application/json"]
+         var headers: [String: String]? = [:]
 //         if let username = BaseEndPoint.baseAuthUsername,
 //            let password = BaseEndPoint.baseAuthPassword {
 //             let loginString = String(format: "%@:%@", username, password)

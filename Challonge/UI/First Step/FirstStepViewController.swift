@@ -19,7 +19,19 @@ class FirstStepViewController: UIViewController {
 }
 
 extension FirstStepViewController: FirstStepViewDelegate {
+    var navigationBarItem: UINavigationItem? {
+        navigationItem
+    }
+    
     func closeButtonDidPress() {
         dismiss(animated: true)
+    }
+    
+    func nextButtonDidPress() {
+        let vc = StartViewController()
+        let tournament = Tournament(name: "New", type: "single elimination", description: "description", gameId: 600, isPrivate: false, notifyUsersWhenMatchesOpens: true, notifyUsersWhenMatchesEnds: true, holdThirdPlaceMatch: true, rankedBy: "match wins", signupCapacity: 15, startDateString: "2022-03-30T19:00:00.000+01:00")
+        let register = TournamentResponse(tournament: tournament)
+        TournamentsService().createTournament(register: register)
+        //navigationController?.pushViewController(vc, animated: true)
     }
 }

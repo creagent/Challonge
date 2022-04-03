@@ -9,7 +9,7 @@ import Foundation
 
 class TournamentsService: NetworkService<TournamentsEndPoint> {
     @discardableResult
-    func createTournament(register: TournamentRegister) -> URLSessionTask? {
+    func createTournament(register: TournamentResponse) -> URLSessionTask? {
         return executeRequest(to: TournamentsEndPoint.create(register: register)) { (result: Data?, error) in
             let serializer = Serializer()
 //            do {

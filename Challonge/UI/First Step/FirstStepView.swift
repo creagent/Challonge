@@ -9,40 +9,48 @@ import UIKit
 
 protocol FirstStepViewDelegate {
     func closeButtonDidPress()
+    func nextButtonDidPress()
+    var navigationBarItem: UINavigationItem? { get }
 }
 
 class FirstStepView: ProgrammaticView {
     private let container = UIView()
     
-    private var closeButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Закрыть", for: .normal)
-        return button
-    }()
+    private var nextButton = CustomButton(withTitle: "Далее")
     
     override func setup() {
         super.setup()
         addSubviews()
         addConstraints()
         
-        closeButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(nextStep), for: .touchUpInside)
     }
     
-    var delegate: FirstStepViewDelegate?
+    var delegate: FirstStepViewDelegate? {
+        didSet {
+            delegate?.navigationBarItem?.rightBarButtonItem = UIBarButtonItem(title: "Закрыть", style: .plain, target: self, action: #selector(close))
+        }
+    }
 }
 
 private extension FirstStepView {
     func addSubviews() {
-        addSubview(closeButton)
+        addSubview(nextButton)
     }
     
     func addConstraints() {
-        closeButton.snp.makeConstraints { maker in
-            maker.top.trailing.equalTo(safeAreaLayoutGuide).inset(16)
+        nextButton.snp.makeConstraints { maker in
+            maker.centerX.equalToSuperview()
+            maker.bottom.equalTo(safeAreaLayoutGuide).inset(16)
+            maker.width.greaterThanOrEqualTo(300)
         }
     }
     
     @objc func close() {
         delegate?.closeButtonDidPress()
+    }
+    
+    @objc func nextStep() {
+        delegate?.nextButtonDidPress()
     }
 }

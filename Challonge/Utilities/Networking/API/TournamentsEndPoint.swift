@@ -8,7 +8,7 @@
 import Foundation
 
 enum TournamentsEndPoint {
-    case create(register: TournamentRegister)
+    case create(register: TournamentResponse)
     case get
 }
 
