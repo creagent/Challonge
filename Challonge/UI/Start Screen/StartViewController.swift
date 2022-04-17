@@ -20,6 +20,7 @@ class StartViewController: UIViewController {
     private let viewModel = StartViewModel()
 }
 
+// MARK: - Private Methods
 private extension StartViewController {
     func openForm() {
         let vc = FirstStepViewController()
@@ -30,6 +31,7 @@ private extension StartViewController {
     }
 }
 
+// MARK: - StartViewDelegate
 extension StartViewController: StartViewDelegate {
     func createButtonDidPress() {
         startView.isCreateButtonActive = false
@@ -40,21 +42,5 @@ extension StartViewController: StartViewDelegate {
             }
             self?.startView.isCreateButtonActive = true
         }
-    }
-}
-
-class CustomNavigationController: UINavigationController {
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        setNavigationBarHidden(true, animated: false)
-    }
-    
-    override init(rootViewController: UIViewController) {
-        super.init(rootViewController: rootViewController)
-        setNavigationBarHidden(true, animated: false)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

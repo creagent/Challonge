@@ -15,6 +15,17 @@
 		8341970F27DE8B8100EA284A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8341970E27DE8B8100EA284A /* StartViewController.swift */; };
 		8341971427DE8B8600EA284A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8341971327DE8B8600EA284A /* Assets.xcassets */; };
 		8341971727DE8B8600EA284A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8341971527DE8B8600EA284A /* LaunchScreen.storyboard */; };
+		8378A554280C991500924A59 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A553280C991500924A59 /* CustomButton.swift */; };
+		8378A556280C993500924A59 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A555280C993500924A59 /* CustomTextField.swift */; };
+		8378A558280C998100924A59 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A557280C998100924A59 /* CustomNavigationController.swift */; };
+		8378A55A280C99CD00924A59 /* FormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A559280C99CD00924A59 /* FormFieldView.swift */; };
+		8378A55C280C99E000924A59 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A55B280C99E000924A59 /* ContentTableViewCell.swift */; };
+		8378A55E280C99F100924A59 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A55D280C99F100924A59 /* RadioButton.swift */; };
+		8378A560280C9A0500924A59 /* RadioElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A55F280C9A0500924A59 /* RadioElementView.swift */; };
+		8378A562280C9A2C00924A59 /* RadioButtonSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A561280C9A2C00924A59 /* RadioButtonSetView.swift */; };
+		8378A564280C9A4200924A59 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A563280C9A4200924A59 /* CustomStackView.swift */; };
+		8378A566280C9A9900924A59 /* Date+dateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A565280C9A9900924A59 /* Date+dateString.swift */; };
+		8378A568280C9AA900924A59 /* DateFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8378A567280C9AA900924A59 /* DateFormFieldView.swift */; };
 		8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */; };
 		8389EFCD27DF0F7600BF24D8 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389EFCC27DF0F7600BF24D8 /* StartView.swift */; };
 		8389EFD127DF101100BF24D8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8389EFD027DF101100BF24D8 /* SnapKit */; };
@@ -51,6 +62,17 @@
 		8341971327DE8B8600EA284A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8341971627DE8B8600EA284A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8341971827DE8B8600EA284A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8378A553280C991500924A59 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8378A555280C993500924A59 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		8378A557280C998100924A59 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		8378A559280C99CD00924A59 /* FormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormFieldView.swift; sourceTree = "<group>"; };
+		8378A55B280C99E000924A59 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		8378A55D280C99F100924A59 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		8378A55F280C9A0500924A59 /* RadioElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioElementView.swift; sourceTree = "<group>"; };
+		8378A561280C9A2C00924A59 /* RadioButtonSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonSetView.swift; sourceTree = "<group>"; };
+		8378A563280C9A4200924A59 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		8378A565280C9A9900924A59 /* Date+dateString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+dateString.swift"; sourceTree = "<group>"; };
+		8378A567280C9AA900924A59 /* DateFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormFieldView.swift; sourceTree = "<group>"; };
 		8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticView.swift; sourceTree = "<group>"; };
 		8389EFCC27DF0F7600BF24D8 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		8397FA6D27E508EF00234E02 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
@@ -114,6 +136,7 @@
 				8397FA8227E50D5900234E02 /* Dictionary+Merge.swift */,
 				8397FA7E27E50D4700234E02 /* Data+DataInstantiable.swift */,
 				8397FA8027E50D5100234E02 /* Dictionary+DataInstantiable.swift */,
+				8378A565280C9A9900924A59 /* Date+dateString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,6 +233,7 @@
 		8341971F27DE8BB700EA284A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8378A552280C98FE00924A59 /* Custom Views */,
 				8389EFC527DF0F2D00BF24D8 /* ProgrammaticView.swift */,
 				8326C80727EA1F82009DB2EF /* Networking */,
 			);
@@ -232,6 +256,23 @@
 				8341971827DE8B8600EA284A /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		8378A552280C98FE00924A59 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8378A553280C991500924A59 /* CustomButton.swift */,
+				8378A555280C993500924A59 /* CustomTextField.swift */,
+				8378A557280C998100924A59 /* CustomNavigationController.swift */,
+				8378A559280C99CD00924A59 /* FormFieldView.swift */,
+				8378A55B280C99E000924A59 /* ContentTableViewCell.swift */,
+				8378A55D280C99F100924A59 /* RadioButton.swift */,
+				8378A55F280C9A0500924A59 /* RadioElementView.swift */,
+				8378A561280C9A2C00924A59 /* RadioButtonSetView.swift */,
+				8378A563280C9A4200924A59 /* CustomStackView.swift */,
+				8378A567280C9AA900924A59 /* DateFormFieldView.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		83C133E12800A68D00C9597B /* Third Step */ = {
@@ -322,22 +363,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8378A55E280C99F100924A59 /* RadioButton.swift in Sources */,
 				8326C80627EA1955009DB2EF /* Tournament.swift in Sources */,
 				8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */,
 				83C133E52800A6B900C9597B /* SecondStepViewController.swift in Sources */,
 				8397FA7227E509A000234E02 /* DataInstantiable.swift in Sources */,
+				8378A554280C991500924A59 /* CustomButton.swift in Sources */,
+				8378A556280C993500924A59 /* CustomTextField.swift in Sources */,
+				8378A558280C998100924A59 /* CustomNavigationController.swift in Sources */,
 				8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */,
 				8326C81227EA2D63009DB2EF /* FirstStepViewController.swift in Sources */,
 				8389EFCD27DF0F7600BF24D8 /* StartView.swift in Sources */,
+				8378A55A280C99CD00924A59 /* FormFieldView.swift in Sources */,
 				8397FA7F27E50D4700234E02 /* Data+DataInstantiable.swift in Sources */,
+				8378A568280C9AA900924A59 /* DateFormFieldView.swift in Sources */,
+				8378A566280C9A9900924A59 /* Date+dateString.swift in Sources */,
 				83C133E92803393C00C9597B /* SecondStepViewModel.swift in Sources */,
 				83C133E32800A6AC00C9597B /* SecondStepView.swift in Sources */,
 				8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */,
 				8397FA7D27E50C7300234E02 /* DataConvertible.swift in Sources */,
+				8378A562280C9A2C00924A59 /* RadioButtonSetView.swift in Sources */,
 				8341970F27DE8B8100EA284A /* StartViewController.swift in Sources */,
 				8397FA8D27E50F7A00234E02 /* TournamentsEndPoint.swift in Sources */,
 				8397FA8327E50D5900234E02 /* Dictionary+Merge.swift in Sources */,
+				8378A55C280C99E000924A59 /* ContentTableViewCell.swift in Sources */,
+				8378A560280C9A0500924A59 /* RadioElementView.swift in Sources */,
 				8397FA7027E5096500234E02 /* HTTP.swift in Sources */,
+				8378A564280C9A4200924A59 /* CustomStackView.swift in Sources */,
 				8326C81427EA2D83009DB2EF /* FirstStepView.swift in Sources */,
 				8389EFC627DF0F2D00BF24D8 /* ProgrammaticView.swift in Sources */,
 				8397FA8127E50D5100234E02 /* Dictionary+DataInstantiable.swift in Sources */,
