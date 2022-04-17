@@ -7,10 +7,6 @@
 
 import UIKit
 
-// Сделать фабрику связанных объектов для второго шага
-
-
-
 struct SecondStepInfo {
     var startDateString: String
     var notifyUsersWhenMatchesOpens: Bool

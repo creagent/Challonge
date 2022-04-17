@@ -18,6 +18,7 @@ enum SecondStepField: Int {
 }
 
 class SecondStepView: ProgrammaticView {
+    // MARK: - Views
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorStyle = .none
@@ -45,6 +46,7 @@ class SecondStepView: ProgrammaticView {
         ])
     ]
     
+    // MARK: - Public
     override func setup() {
         super.setup()
         tableView.dataSource = self
@@ -87,6 +89,7 @@ class SecondStepView: ProgrammaticView {
     }
 }
 
+// MARK: - Setup
 private extension SecondStepView {
     func addSubviews() {
         addSubview(tableView)
@@ -113,6 +116,7 @@ private extension SecondStepView {
     }
 }
 
+// MARK: - UITableViewDataSource
 extension SecondStepView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         fields.count
@@ -125,44 +129,5 @@ extension SecondStepView: UITableViewDataSource {
         cell.setContent(field)
         cell.selectionStyle = .none
         return cell
-    }
-}
-
-extension Date {
-    var dateString: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-ddTHH:mm:ss"
-        return dateFormatter.string(from: self)
-    }
-}
-
-class DateFormFieldView: FormFieldView {
-    private let datePicker: UIDatePicker = {
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        if #available(iOS 13.4, *) {
-            datePicker.preferredDatePickerStyle = .wheels
-        }
-        return datePicker
-    }()
-    
-    convenience init(title: String? = nil, initialDate: Date) {
-        self.init(title: title, placeholder: "")
-        textfield.text = initialDate.dateString
-        textfield.inputView = datePicker
-        datePicker.addTarget(self, action: #selector(dateChanged), for: .valueChanged)
-        let toolbar = UIToolbar()
-        toolbar.sizeToFit()
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(done))
-        toolbar.setItems([doneButton], animated: true)
-        textfield.inputAccessoryView = toolbar
-    }
-    
-    @objc func done() {
-        endEditing(true)
-    }
-    
-    @objc func dateChanged() {
-        textfield.text = datePicker.date.dateString
     }
 }

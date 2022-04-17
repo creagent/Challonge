@@ -12,6 +12,7 @@ protocol StartViewDelegate {
 }
 
 class StartView: ProgrammaticView {
+    // MARK: - Views
     private let container = UIView()
     
     private let loginTextField = CustomTextField(placeholder: "Логин")
@@ -20,6 +21,7 @@ class StartView: ProgrammaticView {
     
     private let createButton = CustomButton(withTitle: "Создать турнир")
     
+    // MARK: - Public
     override func setup() {
         super.setup()
         addSubviews()
@@ -50,6 +52,7 @@ class StartView: ProgrammaticView {
     var delegate: StartViewDelegate?
 }
 
+// MARK: - Setup
 private extension StartView {
     func addSubviews() {
         addSubview(container)
@@ -78,83 +81,5 @@ private extension StartView {
             maker.top.equalTo(apiKeyTextField.snp.bottom).offset(32)
             maker.width.greaterThanOrEqualTo(300)
         }
-    }
-}
-
-
-class CustomTextField: UITextField {
-    // MARK: - Public
-    convenience init(placeholder: String) {
-        self.init(frame: .zero)
-        font = UIFont.systemFont(ofSize: 16)
-        textAlignment = .left
-        self.placeholder = placeholder
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.gray.cgColor
-        clearButtonMode = .whileEditing
-    }
-    
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: horizontalInset, dy: verticalInset)
-    }
-    
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: horizontalInset, dy: verticalInset)
-    }
-    
-    // MARK: - Private
-    private let horizontalInset: CGFloat = 16
-    
-    private let verticalInset: CGFloat = 16
-}
-
-class CustomButton: UIButton {
-    // MARK: - Lifecycle
-    override var isUserInteractionEnabled: Bool {
-        didSet {
-            if !isUserInteractionEnabled && color != .clear {
-                backgroundColor = color.withAlphaComponent(0.7)
-            } else {
-                backgroundColor = color
-            }
-        }
-    }
-    
-    override var isEnabled: Bool {
-        didSet {
-            backgroundColor = color
-        }
-    }
-        
-    // MARK: - Init
-    convenience init(withTitle title: String, handler: (() -> Void)? = nil) {
-        self.init(frame: CGRect())
-        setTitle(title, for: .normal)
-        contentEdgeInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-        setup()
-    }
-    
-    // MARK: - Public properties
-    var buttonDidPress: (() -> Void)?
-    var color: UIColor { .systemOrange }
-    var titleColor: UIColor { .black }
-    
-    static let height: CGFloat = 48.0
-    
-    // MARK: - Action
-    @objc private func press(sender: UIButton) {
-        buttonDidPress?()
-    }
-}
-
-// MARK: - Private
-extension CustomButton {
-    private func setup() {
-        snp.makeConstraints { maker in
-            maker.height.equalTo(Self.height)
-        }
-        backgroundColor = color
-        setTitleColor(titleColor, for: .normal)
-        addTarget(self, action: #selector(press(sender:)), for: .touchUpInside)
     }
 }

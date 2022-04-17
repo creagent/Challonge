@@ -11,6 +11,7 @@ class StartViewModel {
     private lazy var tournamentService = TournamentsService()
 }
 
+// MARK: - API Methods
 extension StartViewModel {
     func checkAccess(login: String, apiKey: String,
                      complete: @escaping (Bool) -> Void) {
