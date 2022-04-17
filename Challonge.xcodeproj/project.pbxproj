@@ -35,6 +35,9 @@
 		8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8A27E50EB700234E02 /* NetworkService.swift */; };
 		8397FA8D27E50F7A00234E02 /* TournamentsEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */; };
 		8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397FA8E27E50FA400234E02 /* TournamentsService.swift */; };
+		83C133E32800A6AC00C9597B /* SecondStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C133E22800A6AC00C9597B /* SecondStepView.swift */; };
+		83C133E52800A6B900C9597B /* SecondStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C133E42800A6B900C9597B /* SecondStepViewController.swift */; };
+		83C133E92803393C00C9597B /* SecondStepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C133E82803393C00C9597B /* SecondStepViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		8397FA8A27E50EB700234E02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8397FA8C27E50F7A00234E02 /* TournamentsEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsEndPoint.swift; sourceTree = "<group>"; };
 		8397FA8E27E50FA400234E02 /* TournamentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentsService.swift; sourceTree = "<group>"; };
+		83C133E22800A6AC00C9597B /* SecondStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepView.swift; sourceTree = "<group>"; };
+		83C133E42800A6B900C9597B /* SecondStepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewController.swift; sourceTree = "<group>"; };
+		83C133E82803393C00C9597B /* SecondStepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStepViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 			children = (
 				8326C80D27EA21EE009DB2EF /* Start Screen */,
 				8326C81027EA2CE4009DB2EF /* First Step */,
+				83C133E12800A68D00C9597B /* Third Step */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -225,6 +232,16 @@
 				8341971827DE8B8600EA284A /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		83C133E12800A68D00C9597B /* Third Step */ = {
+			isa = PBXGroup;
+			children = (
+				83C133E22800A6AC00C9597B /* SecondStepView.swift */,
+				83C133E42800A6B900C9597B /* SecondStepViewController.swift */,
+				83C133E82803393C00C9597B /* SecondStepViewModel.swift */,
+			);
+			path = "Third Step";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,11 +324,14 @@
 			files = (
 				8326C80627EA1955009DB2EF /* Tournament.swift in Sources */,
 				8397FA8F27E50FA400234E02 /* TournamentsService.swift in Sources */,
+				83C133E52800A6B900C9597B /* SecondStepViewController.swift in Sources */,
 				8397FA7227E509A000234E02 /* DataInstantiable.swift in Sources */,
 				8397FA6E27E508EF00234E02 /* HTTPRequestManager.swift in Sources */,
 				8326C81227EA2D63009DB2EF /* FirstStepViewController.swift in Sources */,
 				8389EFCD27DF0F7600BF24D8 /* StartView.swift in Sources */,
 				8397FA7F27E50D4700234E02 /* Data+DataInstantiable.swift in Sources */,
+				83C133E92803393C00C9597B /* SecondStepViewModel.swift in Sources */,
+				83C133E32800A6AC00C9597B /* SecondStepView.swift in Sources */,
 				8397FA8B27E50EB700234E02 /* NetworkService.swift in Sources */,
 				8397FA7D27E50C7300234E02 /* DataConvertible.swift in Sources */,
 				8341970F27DE8B8100EA284A /* StartViewController.swift in Sources */,

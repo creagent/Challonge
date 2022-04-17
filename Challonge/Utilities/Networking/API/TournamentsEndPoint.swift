@@ -23,24 +23,29 @@ extension TournamentsEndPoint: EndPoint {
         return "\(result).json"
     }
     
-    var body: EndPointBody? {
-        var data: Data
+    var queryItems: [String: Any]? {
+        var queryItems: [String: Any?] = [:]
         switch self {
         case .create(let register):
-            data = try! JSONEncoder().encode(register)
+            let tournament = register.tournament
+            queryItems = [
+                "tournament[\(Tournament.CodingKeys.name.rawValue)]": tournament.name,
+                "tournament[\(Tournament.CodingKeys.type.rawValue)]": tournament.type,
+                "tournament[\(Tournament.CodingKeys.description.rawValue)]": tournament.description,
+                "tournament[\(Tournament.CodingKeys.gameId.rawValue)]": tournament.gameId,
+                "tournament[\(Tournament.CodingKeys.isPrivate.rawValue)]": tournament.isPrivate,
+                "tournament[\(Tournament.CodingKeys.notifyUsersWhenMatchesOpens.rawValue)]": tournament.notifyUsersWhenMatchesOpens,
+                "tournament[\(Tournament.CodingKeys.notifyUsersWhenMatchesEnds.rawValue)]": tournament.notifyUsersWhenMatchesEnds,
+                "tournament[\(Tournament.CodingKeys.holdThirdPlaceMatch.rawValue)]": tournament.holdThirdPlaceMatch,
+                "tournament[\(Tournament.CodingKeys.rankedBy.rawValue)]": tournament.rankedBy,
+                "tournament[\(Tournament.CodingKeys.signupCapacity.rawValue)]": tournament.signupCapacity,
+                "tournament[\(Tournament.CodingKeys.startDateString.rawValue)]": tournament.startDateString
+            ]
         default:
-            return nil
+            break
         }
-        return EndPointBody(requestData: data)
+        return queryItems.compactMapValues({ $0 })
     }
-    
-//    var queryItems: [String: Any]? {
-//        var queryItems: [String: Any?] = [:]
-//        switch self {
-//
-//        }
-//        return queryItems.compactMapValues({ $0 })
-//    }
     
     var httpMethod: HTTPMethod {
         switch self {
